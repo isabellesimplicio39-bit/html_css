@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cotação de Seguro de Veículo</title>
+</head>
+
+<body>
+
+    <h1>Cotação de Seguro de Veículo</h1>
+
+    <form>
+
+        <fieldset>
+
+            <legend>Condutor</legend>
+
+            <label for="nome">Nome do Proprietário:</label>
+            <input type="text" id="nome" name="nome" size="25">
+            <br>
+            <br>
+            <label for="cnh">CNH:</label>
+            <input type="text" id="cnh" name="cnh" size="25">
+            <br>
+            <br>
+            <label for="data">Data de Emissão da CNH:</label>
+            <input type="date" id="data" name="data">
+            <br>
+            <br>
+            <label>Estado Civil:</label>
+            <br>
+            <br>
+            <input type="radio" id="solteiro" name="estadoCivil" value="solteiro">
+            <label for="solteiro">Solteiro</label>
+
+            <input type="radio" id="casado" name="estadoCivil" value="casado">
+            <label for="casado">Casado</label>
+
+            <input type="radio" id="divorciado" name="estadoCivil" value="divorciado">
+            <label for="divorciado">Divorciado</label>
+
+            <input type="radio" id="viuvo" name="estadoCivil" value="viuvo">
+            <label for="viuvo">Viúvo</label>
+
+        </fieldset>
+
+        <fieldset>
+
+            <legend>Veículo</legend>
+
+            <label for="placa">Placa do Carro:</label>
+            <input type="text" id="placa_obr" name="placa" size="10"
+             placeholder="ABC-1234">
+            <br>
+            <br>
+            <label for="marca">Marca do Veículo:</label>
+
+            <select id="marca" name="marca">
+                <option value="fiat">Fiat</option>
+                <option value="vw">VW</option>
+                <option value="chevrolet">Chevrolet</option>
+                <option value="toyota">Toyota</option>
+                <option value="honda">Honda</option>
+                <option value="outro">Outro</option>
+
+            </select>
+            <br>
+            <br>
+            <label for="ano">Ano do Modelo:</label>
+            <input type="text" id="ano" name="ano" size="10">
+
+        </fieldset>
+
+        <fieldset>
+
+            <legend>Uso</legend>
+
+            <label>Usa o carro para trabalhar(Taxi)?<label>
+            <br>
+            <br>
+
+            <input type="radio" id="sim" name="taxi" value="sim">
+            <label for="sim">Sim</label>
+
+            <input type="radio" id="nao" name="taxi" value="nao">
+            <label for="nao">Não</label>
+            <br>
+            <br>
+
+            <input type="checkbox" id="rastreador_obr" name="rastreador" value="sim">
+            <label for="rastreador"> Possui rastreador instalado </label>
+
+        </fieldset>
+        
+        <br>
+
+        <button type="submit">Solicitar Cotação</button>
+
+    </form>
+
+</body>
+
+</html>
