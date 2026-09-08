@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finalizar Compra</title>
+</head>
+
+<body>
+
+    <h1>Finalizar Compra</h1>
+
+    <form>
+        <fieldset>
+
+            <legend>Endereço de Entrega</legend>
+
+            <label for="nome">Nome do Destinatário:</label>
+            <input type="text" id="nome_obr" name="nome" size="20">
+            <br>
+            <br>
+            <label for="cep">CEP:</label>
+            <input type="text" id="cep_obr" name="cep" 
+            size="8" 
+            placeholder="00000-000">
+            <br>
+            <br>
+            <label for="rua">Rua:</label>
+            <input type="text" id="rua_obr" name="rua" size="35">
+            <br>
+            <br>
+            <label for="numero">Número:</label>
+            <input type="text" id="numero_obr" name="numero" size="15">
+            <br>
+            <br>
+            <label for="complemento">Complemento:</label>
+            <input type="text" id="complemento_obr" name="complemento" size="25"
+            placeholder="Apto, Bloco, Ponto de Referência">
+        </fieldset>
+
+
+        <fieldset>
+
+            <legend>Opções de Entrega</legend>
+
+            <label for="periodo">Período de Entrega:</label>
+
+            <select id="periodo" name="periodo">
+                <option value="manha">Manhã (08h-12h)</option>
+                <option value="tarde">Tarde (12h-18h)</option>
+                <option value="noite">Noite (18h-22h)</option>
+            </select>
+            <br>
+            <br>
+            <label>Instruções de Entrega:</label>
+            <br>
+            <input type="radio" id="portaria_obr" name="instrucao" value="portaria">
+            <label for="portaria">Deixar na portaria</label>
+            <br>
+           <input type="radio" id="maos_obr" name="instrucao" value="maos">
+           <label for="entregar">Entregar em mãos</label>
+            <br>
+            <input type="radio" id="ligar_obr" name="instrucao" value="ligar">
+            <label for="ligar">Ligar ao chegar</label>
+
+            <br>
+            <br>
+
+            <label for="cupom">Cupom de Desconto:</label>
+            <input type="text" id="cupom_obr" name="cupom" size="20"
+            placeholder="Insira seu cupom">
+            <br>
+            <br>
+            <input type="checkbox" id="whatsapp" name="whatsapp" value="sim">
+            <label for="whatsapp"> Receber ofertas por WhatsApp</label>
+        </fieldset>
+        <br>
+        <button type="submit">Finalizar Compra</button>
+    </form>
+
+</body>
+</html>
